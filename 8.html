@@ -1,0 +1,18 @@
+<script type="text/javascript">
+// simple function
+    calc();
+    function calc(){
+        var a = parseInt(prompt("Enter value of a : "));
+        var b = parseInt(prompt("Enter value of b : "));
+        var op = prompt("Choose any operator (+, -, *, /) : ");
+
+        switch(op){
+            case '+' : document.write("a + b = "+(a+b)); break;
+            case '-' : document.write("a - b = "+(a-b)); break;
+            case '*' : document.write("a * b = "+(a*b)); break;
+            case '/' : document.write("a / b = "+(a/b)); break;
+            default : document.write("Invalid Choice.");
+        }
+    }
+
+</script>

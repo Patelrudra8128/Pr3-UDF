@@ -1,0 +1,42 @@
+<script type="text/javascript">
+    var a = parseInt(prompt("Enter value of a : "));
+    var b = parseInt(prompt("Enter value of b : "));
+    var c = parseInt(prompt("Enter value of c : "));
+    var d = parseInt(prompt("Enter value of d : "));
+
+    max(a,b,c,d);
+    function max(a,b,c,d){
+        if(a==b && b==c && c==d){
+            document.write("All values are same.");
+        }else if(a==b && b==c){
+            document.write("A, B, C are same.");
+        }else if(b==c && c==d){
+            document.write("B, C, D are same.");
+        }else if(a==c && c==d){
+            document.write("A, C, D are same.");
+        }else if(a==b && b==d){
+            document.write("A, B, D are same.");
+        }else if(a==b){
+            document.write("A & B are same.");
+        }else if(a==c){
+            document.write("A & C are same.");
+        }else if(a==d){
+            document.write("A & D are same.");
+        }else if(b==c){
+            document.write("B & C are same.");
+        }else if(b==d){
+            document.write("B & D are same.");
+        }else if(c==d){
+            document.write("C & D are same.");
+        }else if(a>b && a>c && a>d){
+            document.write("A is Big.");
+        }else if(b>a && b>c && b>d){
+            document.write("B is Big.");
+        }else if(c>a && c>b && c>d){
+            document.write("C is Big.");
+        }else if(d>a && d>b && d>c){
+            document.write("D is Big.");
+        }
+    }
+
+</script>

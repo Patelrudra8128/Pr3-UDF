@@ -1,0 +1,156 @@
+<script type="text/javascript">
+// simple function
+    // max();
+    // function max(){
+    //     var a = parseInt(prompt("Enter value of a : "));
+    //     var b = parseInt(prompt("Enter value of b : "));
+    //     var c = parseInt(prompt("Enter value of c : "));
+
+    //     if(a==b && b==c){
+    //         document.write("All are same.");
+    //     }else if(a==b){
+    //         document.write("A & B are same.");
+    //     }else if(b==c){
+    //         document.write("B & C are same.");
+    //     }else if(a==c){
+    //         document.write("A & C are same.");
+    //     }else{
+    //         if(a>b){
+    //             if(a>c){
+    //                 document.write("A is Big.");
+    //             }else{
+    //                 document.write("C is Big.");
+    //             }
+    //         }else{
+    //             if(b>c){
+    //                 document.write("B is Big.");
+    //             }else{
+    //                 document.write("C is Big.");
+    //             }
+    //         }
+    //     }
+    // }
+
+
+// No Return with parameter
+    // var a = parseInt(prompt("Enter value of a : "));
+    // var b = parseInt(prompt("Enter value of b : "));
+    // var c = parseInt(prompt("Enter value of c : "));
+
+    // max(a,b,c);
+
+    // function max(a,b,c){
+    //     if(a==b && b==c){
+    //         document.write("All are same.");
+    //     }else if(a==b){
+    //         document.write("A & B are same.");
+    //     }else if(b==c){
+    //         document.write("B & C are same.");
+    //     }else if(a==c){
+    //         document.write("A & C are same.");
+    //     }else{
+    //         if(a>b){
+    //             if(a>c){
+    //                 document.write("A is Big.");
+    //             }else{
+    //                 document.write("C is Big.");
+    //             }
+    //         }else{
+    //             if(b>c){
+    //                 document.write("B is Big.");
+    //             }else{
+    //                 document.write("C is Big.");
+    //             }
+    //         }
+    //     }
+    // }
+
+
+//Return with no parameter
+    // var ans = max();
+    
+    // switch(ans){
+    //     case 1 : document.write("All are same."); break;
+    //     case 2 : document.write("A & B are same."); break;
+    //     case 3 : document.write("B & C are same."); break;
+    //     case 4 : document.write("A & C are same."); break;
+    //     case 5 : document.write("A is Big."); break;
+    //     case 6 : document.write("B is Big."); break;
+    //     case 7 : document.write("C is Big."); break;
+    // }
+    
+    // function max(){
+    //     var a = parseInt(prompt("Enter value of a : "));
+    //     var b = parseInt(prompt("Enter value of b : "));
+    //     var c = parseInt(prompt("Enter value of c : "));
+
+    //     if(a==b && b==c){
+    //         return 1;
+    //     }else if(a==b){
+    //         return 2;
+    //     }else if(b==c){
+    //         return 3;
+    //     }else if(a==c){
+    //         return 4;
+    //     }else{
+    //         if(a>b){
+    //             if(a>c){
+    //                 return 5;
+    //             }else{
+    //                 return 7;
+    //             }
+    //         }else{
+    //             if(b>c){
+    //                 return 6;
+    //             }else{
+    //                 return 7;
+    //             }
+    //         }
+    //     }
+    // }
+
+
+// Return with parameter
+    var a = parseInt(prompt("Enter value of a : "));
+    var b = parseInt(prompt("Enter value of b : "));
+    var c = parseInt(prompt("Enter value of c : "));
+
+    var ans = max(a,b,c);
+    
+    switch(ans){
+        case 1 : document.write("All are same."); break;
+        case 2 : document.write("A & B are same."); break;
+        case 3 : document.write("B & C are same."); break;
+        case 4 : document.write("A & C are same."); break;
+        case 5 : document.write("A is Big."); break;
+        case 6 : document.write("B is Big."); break;
+        case 7 : document.write("C is Big."); break;
+    }
+
+    function max(a,b,c){
+
+        if(a==b && b==c){
+            return 1;
+        }else if(a==b){
+            return 2;
+        }else if(b==c){
+            return 3;
+        }else if(a==c){
+            return 4;
+        }else{
+            if(a>b){
+                if(a>c){
+                    return 5;
+                }else{
+                    return 7;
+                }
+            }else{
+                if(b>c){
+                    return 6;
+                }else{
+                    return 7;
+                }
+            }
+        }
+    }
+</script>

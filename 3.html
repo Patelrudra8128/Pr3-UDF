@@ -1,0 +1,66 @@
+<script type="text/javascript">
+    // simple function
+    max();
+
+    function max(){
+        var a = parseInt(prompt("Enter value of a : "));
+        var b = parseInt(prompt("Enter value of b : "));
+        var c = parseInt(prompt("Enter value of c : "));
+        var d = parseInt(prompt("Enter value of d : "));
+    
+        
+        if(a==b && b==c && c==d){
+            document.write("All are same.");
+        }else if(a==b && b==c){
+            document.write("A, B, C are same.");
+        }else if(a==c && c==d){
+            document.write("A, C, D are same.");
+        }else if(a==b && a==d){
+            document.write("A, B, D are same.");
+        }else if(b==c && c==d){
+            document.write("B, C, D are same.");
+        }else if(a==b){
+            document.write("A & B are same.");
+        }else if(b==c){
+            document.write("B & C are same.");
+        }else if(c==d){
+            document.write("C & D are same.");
+        }else if(a==d){
+            document.write("A & D are same.");
+        }else if(b==d){
+            document.write("B & D are same.");
+        }else if(a==c){
+            document.write("A & C are same.");
+        }else{
+            if(a>b){
+                if(a>c){
+                    if(a>d){
+                        document.write("A is Big.");
+                    }else{
+                        document.write("D is Big.");
+                    }
+                }else{
+                    if(c>d){
+                        document.write("C is Big.");
+                    }else{
+                        document.write("D is Big.");
+                    }
+                }
+            }else{
+                if(b>c){
+                    if(b>d){
+                        document.write("B is Big.");
+                    }else{
+                        document.write("D is Big.");
+                    }
+                }else{
+                    if(c>d){
+                        document.write("C is Big.");
+                    }else{
+                        document.write("D is BIg.");
+                    }
+                }
+            }
+        }
+    }  
+</script>

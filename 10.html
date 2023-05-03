@@ -1,0 +1,47 @@
+<script type="text/javascript">
+// simple function
+    // vote();
+    // function vote(){
+    //     var a = parseInt(prompt("Enter your age : "));
+
+    //     (a>=18) ? document.write("You are eligible to vote.") : document.write("You are not eligible to vote."); 
+    // }
+
+
+// No Return with parameter
+    // var a = parseInt(prompt("Enter your age : "));
+    // vote(a);
+
+    // function vote(){
+    //     (a>=18) ? document.write("You are eligible to vote.") : document.write("You are not eligible to vote."); 
+    // }
+
+
+//Return with no parameter
+    // var ans = vote();
+    // (ans==1) ? document.write("You are eligible to vote.") : document.write("You are not eligible to vote.");
+
+    // function vote(){
+    //     var a = parseInt(prompt("Enter your age : "));
+
+    //     if(a>=18){
+    //         return 1;
+    //     }else{
+    //         return 2;
+    //     }
+    // }
+
+
+//Return with parameter
+    var a = parseInt(prompt("Enter your age : "));
+    var ans = vote(a);
+    (ans==1) ? document.write("You are eligible to vote.") : document.write("You are not eligible to vote.");
+
+    function vote(){
+        if(a>=18){
+            return 1;
+        }else{
+            return 2;
+        }
+    }
+</script>

@@ -1,0 +1,95 @@
+<script type="text/javascript">
+// Simple function
+    // swap();
+    // function swap(){
+    //     var a = parseInt(prompt("Enter value of a : "));
+    //     var b = parseInt(prompt("Enter value of b : "));
+    //         document.write("A = "+a);
+    //         document.write(", B = "+b);
+    //     var c = a;
+    //         a = b;
+    //         b = c;
+
+    //         document.write("<h2>After Swapping : </h2>");
+    //         document.write("A = "+a);
+    //         document.write(", B = "+b);
+
+    // }
+
+
+// No Ruturn with parameter
+    // var a = parseInt(prompt("Enter value of a : "));
+    // var b = parseInt(prompt("Enter value of b : ")); 
+    
+    // swap(a,b);
+
+    // function swap(a,b){
+    //     document.write("A = "+a);
+    //     document.write(", B = "+b);
+    //     var c = a;
+    //         a = b;
+    //         b = c;
+
+    //         document.write("<h2>After Swapping : </h2>");
+    //         document.write("A = "+a);
+    //         document.write(", B = "+b);
+
+    // }
+
+
+//Return with no parameter
+    // function aswap(){
+    //     var a = parseInt(prompt("Enter value of a : "));
+    //     return a;
+    // }
+
+    // function bswap(){
+    //     var b = parseInt(prompt("Enter value of b : "));
+    //     return b;
+    // }
+
+    // var ans1 = aswap();
+    // var ans2 = bswap();
+    
+    // document.write("A = "+ans1);
+    // document.write(", B = "+ans2);
+    
+    // var c = ans1;
+    //     ans1 = ans2;
+    //     ans2 = c;
+
+    //     document.write("<h2>After Swapping : </h2>");
+    //     document.write("A = "+ans1);
+    //     document.write(", B = "+ans2);
+
+    
+// Return with parameter
+    function aswap(){  
+        var a = parseInt(prompt("Enter value of a : "));
+        return a;
+    }
+
+    function bswap(){ 
+        var b = parseInt(prompt("Enter value of b : "));   
+        return b;
+    }
+
+    function swap(ans1,ans2){
+        document.write("A = "+ans1);
+        document.write(", B = "+ans2);
+        
+        var c = ans1;
+            ans1 = ans2;
+            ans2 = c;
+
+            document.write("<h2>After Swapping : </h2>");
+            document.write("A = "+ans1);
+            document.write(", B = "+ans2);
+    }
+        
+    var ans1 = aswap();
+    var ans2 = bswap();
+
+    swap(ans1,ans2);
+    
+</script>
